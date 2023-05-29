@@ -11,6 +11,7 @@ export default () => {
     })
     return (
         <Flex
+            fontSize="50px"
             alignItems="center"
             justifyContent="center"
             h={`${height_v}px`}
@@ -18,8 +19,15 @@ export default () => {
             <Box
                 bg="#ddd"
                 p="0px 3px"
-                borderRadius="5px"
+                borderRadius="10px"
                 mr="5px"
+                _hover={{
+                    bg: "red"
+                }}
+                
+                _active={{
+                    bg: "blue"
+                }}
             >{route.query.name}</Box> is Not Founded
         </Flex>
     )
